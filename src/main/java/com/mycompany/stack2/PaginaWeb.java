@@ -7,13 +7,21 @@ package com.mycompany.stack2;
 public class PaginaWeb {
 
     public static void main(String[] args) {
+        
+        Pag navegador = new Pag("Inicio");
 
-        Pag web = new Pag("https//Espoch.edu.ec");
-        /*Pag web2 = new Pag("https//Espoch.edu.ec");
-        Pag web3 = new Pag("https//Espoch.edu.ec");
+        navegador.visitar("google.com");
+        navegador.visitar("youtube.com");
+        navegador.visitar("github.com");
+        navegador.mostrarHistorial();
 
-        web.navegarAdelante();
+        navegador.navegarAtras();
+        navegador.mostrarHistorial();
 
-        web.navegarAtras();*/
+        navegador.navegarAtras();
+        navegador.mostrarHistorial();
+
+        navegador.navegarAdelante();
+        navegador.mostrarHistorial();
     }
 }

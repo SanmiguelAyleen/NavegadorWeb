@@ -42,4 +42,17 @@ public class Pag {
         }
 
     }
+    
+    public void visitar(String nuevaPagina) {
+        atras.push(actual);
+        actual = nuevaPagina;
+    }
+    
+    public void mostrarHistorial() {
+        System.out.println("\n===== HISTORIAL DE NAVEGACION =====");
+        System.out.println("Atras: " + atras);
+        System.out.println("Pagina actual: " + actual);
+        System.out.println("Adelante: " + adelante);
+        System.out.println("===================================\n");
+    }
 }
